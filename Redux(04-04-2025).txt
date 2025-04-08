@@ -1,0 +1,37 @@
+//step1
+=======
+install npm install redux
+import accountstore from the 'redux';
+create a store
+
+const accountStore={
+custname:
+balanceamt:
+contact:
+}
+
+
+//step2:create a reducer ;(a reducer is just a function)
+=======
+//store the initial state 
+
+fuction accountReducer(state=accountStore,action)//component start here
+{
+
+if(action.type==="deposit")
+{
+return{...state,balanceamt:state.balance+action .payload};
+}
+
+if(action.type==="withdraw")
+{
+return{...state,balanceamt:state.balance-action .payload};
+}
+
+return state;
+
+}//component end here
+let storeobj=crateStore(accountreducer);
+storeobj.dispacher({type:"deposit",payload:1000});
+storeobj.
+storeobj.dispacher({type:"withdraw",payload:5000});
